@@ -534,7 +534,6 @@ func (s *DeviceService) processPlatformInventoryEventUpdateDevice(eventData Plat
 	if err != nil {
 		return err
 	}
-
 	logger := s.log.WithFields(log.Fields{
 		"host_id":    device.UUID,
 		"event_type": eventData.Type,
